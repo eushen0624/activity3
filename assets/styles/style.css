@@ -1,0 +1,178 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Merriweather', serif;
+	font-family: 'Lexend Zetta', sans-serif;
+}
+
+.home{
+	background: linear-gradient(
+			rgba(135, 206, 235, 0.25), 
+			rgb(179,59,0)
+			), url(../images/bg2.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.home > div >h1 {
+	color: #950740;
+	font-size: 40px;
+}
+
+.home > div > p{
+	/*color: #4e4e50;*/
+	color: #2a363b;
+}
+.btn{
+	background-color: #1a1a1d;
+	color: #ae3c53;
+	padding: 10px 40px;
+	margin: 10px;
+	border-radius: 20px;
+	font-size:15px;
+	border-color: #C3073F;
+}
+
+.btn:hover{
+	color: white;
+	transition: 1s;
+	border-color: #1a1a1d;
+	
+}
+
+.museum{
+	height: 100vh;
+	background-color: salmon;
+	display: flex;
+}
+
+.left{
+	background-color: #EAE7DC;
+	height: 100vh;
+	width:50vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.right{
+	background-color: #D8C3A5;
+	height: 100vh;
+	width:50vw;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 50px;
+	font-size: 10px;
+	color: #4e4e50;
+	font-weight: bolder;
+	text-align: left;
+}
+
+.von {
+	height: 250px;
+	width: 400px;
+	align-items: center;
+}
+.quote-pic{
+	display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.museum > .left > div{
+	margin: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.museum > .left > div > p {
+	font-size: 10px;
+	text-align: right;
+}
+
+.museum > .left > div > h1{
+	font-size: 25px;
+}
+
+.museum > .right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-me {
+	background: url(../images/me-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.about-me > .my-pic {
+	height: 250px;
+	width: 325px;
+	border-radius: 50px;
+	box-shadow: 20px 20px black;
+}
+
+.about-me > div > h3{
+	color: white;
+	padding-left: 10px;
+	text-align: left;
+	font-size: 30px;
+
+}
+
+.about-me > div > p{
+	color: white;
+	font-size: 10px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.about-me > div > i{
+	color: white;
+	font-size: 15px;
+	text-align: left;
+	padding-left: 10px;
+	
+}
+
+.about-me > div{
+	width: 400px;
+}
+
+.photos
+	{
+	background: url(../images/bg2.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.sign-up{
+	background: url(../images/vongogh.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
