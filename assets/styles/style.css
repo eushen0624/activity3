@@ -8,11 +8,13 @@ body{
 	font-family: 'Lexend Zetta', sans-serif;
 }
 
-.home{
+#home{
 	background: linear-gradient(
-			rgba(135, 206, 235, 0.25), 
-			rgb(179,59,0)
+			rgba(135, 206, 235, 0.05), 
+			rgba(179,59,0)
 			), url(../images/bg2.jpg);
+
+	/*  rgba(179,59,0) - #B33B00*/
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -22,14 +24,16 @@ body{
 	height: 100vh;
 }
 
-.home > div >h1 {
+#home > div >h1 {
 	color: #950740;
-	font-size: 40px;
+	font-size: 50px;
+	text-shadow: 5px 2px #1a1a1d;
 }
 
-.home > div > p{
+#home > div > p{
 	/*color: #4e4e50;*/
-	color: #2a363b;
+	/*color: #2a363b;*/
+	color:#1a1a1d;
 }
 .btn{
 	background-color: #1a1a1d;
@@ -48,7 +52,7 @@ body{
 	
 }
 
-.museum{
+#museum{
 	height: 100vh;
 	background-color: salmon;
 	display: flex;
@@ -88,28 +92,28 @@ body{
     padding-bottom: 25px;
 }
 
-.museum > .left > div{
+#museum > .left > div{
 	margin: 50px;
 	justify-content: center;
 	align-items: center;
 }
 
-.museum > .left > div > p {
+#museum > .left > div > p {
 	font-size: 10px;
 	text-align: right;
 }
 
-.museum > .left > div > h1{
+#museum > .left > div > h1{
 	font-size: 25px;
 }
 
-.museum > .right {
+#museum > .right {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.about-me {
+#about-me {
 	background: url(../images/me-bg.jpg);
 	background-position: center;
 	background-size: cover;
@@ -120,14 +124,14 @@ body{
 	text-align: center;
 }
 
-.about-me > .my-pic {
+#about-me > .my-pic {
 	height: 250px;
 	width: 325px;
 	border-radius: 50px;
 	box-shadow: 20px 20px black;
 }
 
-.about-me > div > h3{
+#about-me > div > h3{
 	color: white;
 	padding-left: 10px;
 	text-align: left;
@@ -135,14 +139,14 @@ body{
 
 }
 
-.about-me > div > p{
+#about-me > div > p{
 	color: white;
 	font-size: 10px;
 	text-align: left;
 	padding-left: 10px;
 }
 
-.about-me > div > i{
+#about-me > div > i{
 	color: white;
 	font-size: 15px;
 	text-align: left;
@@ -150,13 +154,13 @@ body{
 	
 }
 
-.about-me > div{
+#about-me > div{
 	width: 400px;
 }
 
-.photos
+#photos
 	{
-	background: url(../images/bg2.jpg);
+	background-color: #333333;
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -164,9 +168,30 @@ body{
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	padding: 20px 20px;
 }
 
-.sign-up{
+.images{
+	height: 230px;
+	width:190px;
+	display: block-inline;
+	align-items: center;
+	float: left;
+	margin:10px;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+
+.images:hover {
+
+	transform:scale(1.4);
+}
+#galery > h1 {
+	color: white;
+	margin-bottom: 30px;
+}
+
+#sign-up{
 	background: url(../images/vongogh.jpg);
 	background-position: center;
 	background-size: cover;
@@ -176,3 +201,101 @@ body{
 	align-items: center;
 	height: 100vh;
 }
+
+.form-box {
+	width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+
+
+}
+
+.form-box h1{
+	color:white;
+	margin-bottom: 20px
+}
+
+input{
+	width: 300px;
+	height: 30px;
+	margin: 5px;
+	border-radius: 5px;
+	padding:5px 15px;
+	decoration: none;
+	font-family: 'Merriweather', serif;
+	/*font-family: 'Lexend Zetta', sans-serif;*/
+}
+
+.btn-submit > button {
+	background-color: #1a1a1d;
+	color: #ae3c53;
+	padding: 10px 40px;
+	margin: 10px;
+	border-radius: 5px;
+	font-size:15px;
+	border-color: #C3073F;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Merriweather', serif;
+	font-family: 'Lexend Zetta', sans-serif;
+}
+
+
+
+/*Nav Bar*/
+
+.nav-bar{
+	overflow: hidden;
+	background-color:#333;
+	position:sticky;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction:row;
+	flex-wrap:wrap;
+	z-index: 1;
+
+}
+
+.nav-bar a{
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 15px 17px;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+
+.nav-list{
+	display: flex;
+	justify-context: right;
+	list-style: none;
+	margin-right: 15%; 
+}
+
+.logo{
+	flex: 1 1 auto;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.nav-bar a:hover{
+	color: #950740;
+}
+
+ul {
+	font-size: 13px;
+}
+
+/*nav-list {
+	display: inline-block;
+	float: left;
+}*/
+
